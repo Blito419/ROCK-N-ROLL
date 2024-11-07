@@ -3,20 +3,20 @@
 // MARQUEE
 
 
-const indicator = document.getElementById("indicator")
-const banner = document.getElementById("banner")
-function start() {
-  indicator.classList.add("flicker")
-  setTimeout(() => {
-    indicator.classList.remove("flicker")
-    banner.classList.add("max")
-    banner.classList.add("flickerbg")
-  }, 2000)
+const root = document.documentElement;
+const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue("--marquee-elements-displayed");
+const marqueeContent = document.querySelector("ul.marquee-content");
+
+root.style.setProperty("--marquee-elements", marqueeContent.children.length);
+
+for(let i=0; i<marqueeElementsDisplayed; i++) {
+  marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
 }
-start()
 
 
 
 
-// TARJETAS
+// grid2
+
+
 
