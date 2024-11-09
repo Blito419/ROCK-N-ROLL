@@ -22,38 +22,38 @@
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
       <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
 
-
+      <!-- JQUERY -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 
         <!-- NAVBAR -->
 
-      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-      <nav id="navbar" class="">
-        <div class="nav-wrapper">
-          <!-- Navbar Logo -->
-          <div class="logo">
-            <!-- Logo Placeholder for Inlustration -->
-            <!-- <a href="#home"><i class="fa fa-angellist">--></i> ROCKFEST HORIZON</a>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">ROCKFEST</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item ">
+                  <a class="nav-link active" href="#intro">INICIO</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link active" href="#informacion">INFORMACION</a>
+                </li>
+                  <a class="nav-link active" href="#artistas">ARTISTAS</a>
+                </li>
+                </li>
+                <a class="nav-link active" href="#entradas">ENTRADAS</a>
+              </li>
+              </li>
+              <a class="nav-link active" href="#merch">MERCHANDAISING</a>
+            </li>
+              </ul>
+            </div>
           </div>
-      
-          <!-- Navbar Links -->
-          <ul id="menu">
-            <li><a href="#intro">INICIO</a></li><!--
-         --><li><a href="#informacion">INFORMACION</a></li><!--
-         --><li><a href="#artistas">ARTISTAS</a></li><!--
-         --><li><a href="#entradas">ENTRADAS</a></li>
-            <li><a href="#merch">MERCHANDAISING</a></li>
-          </ul>
-        </div>
-      </nav>
-      
-      
-      <!-- Menu Icon -->
-      <div class="menuIcon">
-        <span class="icon icon-bars"></span>
-        <span class="icon icon-bars overlay"></span>
-      </div>
-      
+        </nav>
  
 
 
@@ -68,13 +68,16 @@
           <!-- VIDEO HEADER -->
 
         <div id="HEADER_VIDEO">
-          <h1 class="position-absolute top-50 start-50 translate-middle text-white text-center">
+           <h1 class="position-absolute top-50 start-50 translate-middle text-white text-center ">
             Rockfest Horizon
           </h1>
           <video  src="img/VideoFest.mp4" autoplay="" muted="" loop=""></video>
 
         </div>
       </header>
+
+
+
 
            <!-- INTRODUCCION -->
 
@@ -91,14 +94,6 @@
             <img src="img/ROCKDFEST_FOTO_INTRO.jpg" alt="">
         </div>
       </section>
-
-
-
-
-      
-
-
-
 
       
 
@@ -259,8 +254,7 @@
           <div class="col-5 foto-boton"> 
             
             <img src="img/HAND.jpg" id="fotomerch" alt="">
-            <button type="button" class="btn btn-outline-dark"><b>COMPRA AQUI</b></button>
-            
+            <button onclick="location.href='merchandaising.html'"type="button" class="btn btn-outline-dark"><b>COMPRA AQUI</b></button>
           </div>
 
         </div>

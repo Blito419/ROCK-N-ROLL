@@ -1,4 +1,7 @@
-*{
+* {
+    box-sizing: border-box;
+  }
+  *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -44,187 +47,79 @@ h2,h3{
     color: #fff;
 }
 
-
-/* INTRO */
-
-#texto1{
-  font-size: 1em;
-}
-
-#intro .row{
-  align-items: center;
-  margin: 4em;
-}
-
-#intro img {
-
-  width: 100%;
-
-}
-
-
-/* NAVBAR */
-
-
-
-
-
-
-
-
-
-/* VIDEO HEADER */
-
-#HEADER_VIDEO video {
-    width: 100%;
-    height: auto;
-}
-
-
-/*INFORMACION */
-
-#informacion {
-  display: flex;
-  justify-content: center;
-  padding: 40px 0;
-  background-color: #f9f9f9;
-}
-
-.card-group {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  max-width: 1200px;
-  width: 100%;
-}
-
-.card {
-  flex: 1 1 30%; /* Ajusta el ancho de cada card */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  background-color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.card i {
-  color: #ff0e0e; /* Cambia el color del icono aquí */
-  margin-bottom: 15px;
-}
-
-.card-title {
-  font-size: 1.5em;
-  margin-bottom: 10px;
-}
-
-.card-text {
-  font-size: 1em;
-  color: #555;
-  margin-bottom: 8px;
-}
-
-.text-body-secondary {
-  font-size: 0.9em;
-  color: #777;
-}
-
-
-
-
-/* ARTISTAS */
-
-#artistas {
-  text-align: center;
-  height: 90vh;
-}
-
-#artistas h1 {
-  text-align: center;
-  font-size: 3em;
-  padding: 1em;
-  font-weight: bold;
   
-}
-
-.band-item {
-  font-size: 1em;
+  /* Just for the fallback layout */
   
-  text-align: center;
-  padding: 1em;
-  transition: transform 0.3s ease; 
-}
-
-
-.band-item:hover {
-  transform: scale(1.2); 
-  font-weight: bold;
-}
-
-
-/* ENTRADAS */
-
-#entradas {
-  background-color: #f5f5f5;
-  padding: 40px 0;
-}
-
-.titulo-entradas {
-  text-align: center;
-  font-size: 3em;
-  padding: 1em;
-  font-weight: bold;
-}
-
-.entradas-img {
-  width: 100%; 
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-}
-
-
-
-
-/* MERCH */
-
-#merch {
-  background-color: red;
-  height: 95vh;
-}
-
-#merch h1 {
-  text-align: center;
-  font-size: 3em;
-  padding: 1em;
-  font-weight: bold;
-}
-
-.infomerch {
-  justify-content: center;
-  align-items: center;
-}
-
-#fotomerch {
-  width: 70%;
-  height: auto;
-  padding-bottom: 2em;
-}
-
-.foto-boton {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  main {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  article {
+    margin: 1rem 0;
+  }
   
-}
+
+
+
+/* Now lets do a Grid-based layout */
+
+@supports (display: grid) {
+    main { 
+      max-width: 10000px;
+      margin: 0;
+    }
+    article {
+      margin: 0;
+    }
+    .deals {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 1rem;
+    }
+  }
+    
+  .deals {
+    font-family: Avenir, Roboto, Helvetica, san-serif; 
+    font-size: 80%;
+    padding: 3em;
+  }
+  .sale-item {
+    display: flex;
+    flex-flow: column;
+    border:  1px solid black;
+    border-radius: 1rem;
+    padding: 2rem;
+  }
+  .sale-item > h1 {
+    margin: 1rem 1rem 0;
+  }
+  .sale-item > ul {
+    margin: 0 0 1rem;
+  }
+  .sale-item > p {
+    margin: 0.25em 1rem 1rem;
+  }
+  .sale-item > img {
+    order: -1;
+    align-self: center;
+  }
+  .sale-item > button {
+    margin-top: auto; 
+    background: teal;
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+  }
+  
 
 
 
 
-/* FOOTER */
+
+
+  /* FOOTER */
 
 
 .site-footer
