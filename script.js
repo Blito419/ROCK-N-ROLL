@@ -16,7 +16,8 @@ for(let i=0; i<marqueeElementsDisplayed; i++) {
 
 
 
-// grid2
+// AOS
 
 
+AOS.init();
 
